@@ -9,9 +9,7 @@ import {
   DataTable,
   TableColumn,
 } from "@dynatrace/strato-components-preview/tables";
-// import { useDqlQuery } from "@dynatrace-sdk/react-hooks";
-// import { CPU_USAGE_QUERY } from "../queries";
-// import { Colors } from "@dynatrace/strato-design-tokens";
+
 import { MOCK_DATA } from "../../mocks/host-list-mock-data";
 import { CustomColumns } from "../../mocks/custom-columns"; //
 
