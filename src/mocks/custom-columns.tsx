@@ -7,7 +7,7 @@ export const CustomColumns: TableColumn[] = [
     autoWidth: true,
   },
   {
-    header: "Host name",
+    header: "Host Name",
     accessor: "hostName",
     autoWidth: true,
   },
@@ -15,14 +15,7 @@ export const CustomColumns: TableColumn[] = [
     id: "cpuUsage",
     header: "CPU Usage",
     columnType: "meterbar",
-    accessor: ({ idle, ioWait, user, system, steal, other }) => [
-      { name: "CPU idle", value: idle },
-      { name: "I/O wait", value: ioWait },
-      { name: "CPU user", value: user },
-      { name: "CPU system", value: system },
-      { name: "CPU steal", value: steal },
-      { name: "CPU other", value: other },
-    ],
+    accessor: ({ cpuAvg }) => [{ name: "CPU Usage", value: cpuAvg }],
     config: {
       showTooltip: true,
     },

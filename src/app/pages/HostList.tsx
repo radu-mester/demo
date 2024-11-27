@@ -1,21 +1,12 @@
 import React from "react";
 import { Flex } from "@dynatrace/strato-components/layouts";
 import { TitleBar } from "@dynatrace/strato-components-preview/layouts";
-// import { ProgressCircle } from "@dynatrace/strato-components/content";
-// import { convertToTimeseries } from "@dynatrace/strato-components-preview/conversion-utilities";
-import { convertToColumns } from "@dynatrace/strato-components-preview/conversion-utilities";
-
-import {
-  DataTable,
-  TableColumn,
-} from "@dynatrace/strato-components-preview/tables";
-
+import { DataTable } from "@dynatrace/strato-components-preview/tables";
 import { MOCK_DATA } from "../../mocks/host-list-mock-data";
-import { CustomColumns } from "../../mocks/custom-columns"; //
+import { CustomColumns } from "../../mocks/custom-columns";
 
 export const HostList = () => {
-  const { types, records } = MOCK_DATA; // Extract types and records
-  const columns = convertToColumns(types); // Convert types to columns
+  const { records } = MOCK_DATA; // Use the simplified records from MOCK_DATA
 
   return (
     <Flex width="100%" flexDirection="column" justifyContent="center" gap={16}>

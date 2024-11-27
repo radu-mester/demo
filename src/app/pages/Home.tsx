@@ -21,7 +21,7 @@ export const Home = () => {
         style={{ paddingBottom: 32 }}
       ></img>
 
-      <Heading>Welcome To Your Dynatrace App</Heading>
+      <Heading>Welcome To Your Dynatrace Demo</Heading>
       <Paragraph>
         Edit <Strong>src/app/pages/Home.tsx</Strong> and save to reload the app.
       </Paragraph>
