@@ -1,6 +1,10 @@
+//React
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
+//Dynatrace components
 import { AppHeader, Page } from "@dynatrace/strato-components-preview/layouts";
+
+// our other pages
 import { Home } from "./pages/Home";
 import { HostList } from "./pages/HostList";
 import { StatusHistory } from "./pages/StatusHistory";
@@ -12,7 +16,10 @@ export const App = () => {
       <Page.Header>
         <AppHeader>
           <AppHeader.NavItems>
-            <AppHeader.AppNavLink as={Link} to="/host-list" />
+            <AppHeader.AppNavLink as={Link} to="/" />
+            <AppHeader.NavItem as={Link} to="/host-list">
+              Host List
+            </AppHeader.NavItem>
             <AppHeader.NavItem as={Link} to="/status-history">
               Status History
             </AppHeader.NavItem>
@@ -26,7 +33,6 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/host-list" element={<HostList />} />
-
           <Route path="/status-history" element={<StatusHistory />} />
           <Route
             path="/extended-host-details"

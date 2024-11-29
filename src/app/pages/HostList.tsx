@@ -2,6 +2,8 @@ import React from "react";
 import { Flex } from "@dynatrace/strato-components/layouts";
 import { TitleBar } from "@dynatrace/strato-components-preview/layouts";
 import { DataTable } from "@dynatrace/strato-components-preview/tables";
+
+//mocked data for demo
 import { MOCK_DATA } from "../../mocks/host-list-mock-data";
 import { CustomColumns } from "../../mocks/custom-columns";
 
